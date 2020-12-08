@@ -14,6 +14,5 @@ It then outputs the labels and the confidence results from each Rekognition infe
 Note:  Defaults to using all models in the first custom labels project.  
 
 ### Resources
-
-https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_project_versions
-
+Uses Rekognition Boto API
+https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html

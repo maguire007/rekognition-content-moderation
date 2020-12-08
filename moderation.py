@@ -48,7 +48,7 @@ def get_project_versions(project_number=0):
 
     return version_arn
 
-    
+
 def extract_values(obj, key):
     """Pull all values of specified key from nested JSON."""
     arr = []
@@ -76,7 +76,7 @@ for subdir, dirs, files in os.walk(image_directory):
 
         if filepath.endswith(".jpg") or filepath.endswith(".png") or filepath.endswith(".jpeg"):
             
-            #Image moderation api
+        #Image moderation api
             json_object_mod=get_moderation_labels(filepath)
             
             
@@ -89,7 +89,7 @@ for subdir, dirs, files in os.walk(image_directory):
             else:
                 print(f"Moderation API: file: {filepath} has no labels")
                 
-            # use the custom image label api to get all labels for each model in the project
+        # use the custom image label api to get all labels for each model in the project
             
             # get the project model arns
             version_arn = get_project_versions()
